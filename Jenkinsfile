@@ -12,4 +12,12 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'always run.'
+        }
+        success {
+            echo 'this messages is shown only if succeeded jobs.'
+        }
+    }
 }
